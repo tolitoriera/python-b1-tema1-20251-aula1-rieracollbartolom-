@@ -48,8 +48,8 @@ def sum_odd_numbers(list_numbers):
       raise ValueError("Error!!La lista contiene valores menores que cero")
     elif not isinstance(n, int):
         raise ValueError("Error!!La lista contiene valores que no son numeros enteros")
-    else:
-      total += n
+    elif n %2 != 0:
+        total += n
   return total
 
 # Si quieres probar tu código, descomenta las siguientes líneas y ejecuta el script 
