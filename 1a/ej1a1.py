@@ -40,28 +40,15 @@ Exemple:
 '''
 
 def fibonacci(fibonacci_number):
-    # Permitimos solo números enteros
-    if type(fibonacci_number) is not int:
-      raise ValueError("El valor debe ser un número entero.")
-    
-    # Solo valen números positivos
-    if fibonacci_number < 0:
-      raise ValueError("El número debe ser mayor o igual a cero.")
-    
-    # Casos base
-    if fibonacci_number == 0:
-      return 0
-    if fibonacci_number == 1:
-      return 1
-    
-    # Algoritmo
-    a, b = 0, 1#variable a, es el numero anterior, b, el actual
-    for i in range(2, fibonacci_number + 1):#el +1 es para que se pare en el número deseado
-      a, b = b, a + b#a la izquierda, variables a actualizar.A la derecha, valores calculados
-      
-    return b
-print(fibonacci(10))
-
+       if not isinstance(fibonacci_number, int):
+        raise ValueError("Number must be integer.")
+    elif fibonacci_number < 0:
+        raise ValueError("Number must be greater than 0.")
+    else:
+        a, b = 0, 1
+    for _ in range(fibonacci_number):
+        a, b = b, a + b
+    return a
 # Si quieres probar tu código, descomenta las siguientes líneas y ejecuta el script 
 # Si vols provar el teu codi, descomenta les línies següents i executa l'script
-# print(fibonacci(10))
+print(fibonacci(10))
