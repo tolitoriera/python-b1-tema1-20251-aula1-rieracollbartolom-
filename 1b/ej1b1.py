@@ -35,7 +35,7 @@ Exemple:
 """
 
 def obtain_max(list_numbers):
-    # Write here your code
+    return max(list_numbers)
     pass
 
 # Si quieres probar tu código, descomenta las siguientes líneas y ejecuta el script 
