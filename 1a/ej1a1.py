@@ -40,7 +40,7 @@ Exemple:
 '''
 
 def fibonacci(fibonacci_number):
-       if not isinstance(fibonacci_number, int):
+    if not isinstance(fibonacci_number, int):
         raise ValueError("Number must be integer.")
     elif fibonacci_number < 0:
         raise ValueError("Number must be greater than 0.")
