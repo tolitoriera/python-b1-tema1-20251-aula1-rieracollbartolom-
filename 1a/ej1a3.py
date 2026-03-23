@@ -37,4 +37,4 @@ def invert_text(text_chain:str):
 
 # Si quieres probar tu código, descomenta las siguientes líneas y ejecuta el script 
 # Si vols provar el teu codi, descomenta les línies següents i executa l'script
- print(invert_text("Hello world!"))
+print(invert_text("Hello world!"))
